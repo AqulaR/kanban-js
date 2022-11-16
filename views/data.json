@@ -1,0 +1,26 @@
+[
+    {
+        "name": "To do",
+        "tasks": [
+            {
+                "name": "sdfsd"
+            }
+        ]
+    },
+    {
+        "name": "In work",
+        "tasks": [
+            {
+                "name": "sdfsd"
+            }
+        ]
+    },
+    {
+        "name": "Done",
+        "tasks": [
+            {
+                "name": "sdfsd"
+            }
+        ]
+    }
+]

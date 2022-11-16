@@ -1,0 +1,123 @@
+<div class="board-container">
+        <div class="board">
+          <div class="bname"><h1>In work</h1></div>
+          <div class="task">
+            <div class="status srochno"></div>
+            <div class="opisanielg"></div>
+            <div class="opisaniesh"></div>
+            <div class="niz">
+              <div class="nizleft">
+                <div style="width: 2%; margin-right: 10px;"><div class="strelka elements"></div></div>
+                <div class="messages"><img src="img/comm2.png"  alt="comments" style="height: 100%" class="elements"></div>
+                <div class="wtime"><img src="img/clock-solid.svg" alt="time" style="height: 80%" class="elements"><div class="txttime elements">&nbsp;&nbsp;1 hour</div></div>
+              </div>
+              <div class="nizright2">
+                <img src="img/check-solid.svg" alt="Add task" style="height: 100%" class="elements"><div class="checktxt elements">&nbsp;&nbsp;6/10</div>
+              </div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="status med"></div>
+            <div class="opisanielg"></div>
+            <div class="opisaniesh"></div>
+            <div class="niz">
+              <div class="nizleft">
+                <div style="width: 2%; margin-right: 10px;"><div class="strelka elements"></div></div>
+                <div class="messages"><img src="img/comm2.png"  alt="comments" style="height: 100%" class="elements"></div>
+                <div class="wtime"><img src="img/clock-solid.svg" alt="time" style="height: 80%" class="elements"><div class="txttime elements">&nbsp;&nbsp;1 day</div></div>
+              </div>
+              <div class="nizright2">
+                <img src="img/check-solid.svg" alt="Add task" style="height: 100%" class="elements"><div class="checktxt elements">&nbsp;&nbsp;8/18</div>
+              </div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="status nesrochno"></div>
+            <div class="opisanielg"></div>
+            <div class="opisaniesh"></div>
+            <div class="niz">
+              <div class="nizleft">
+                <div style="width: 2%; margin-right: 10px;"><div class="strelka elements"></div></div>
+                <div class="messages"><img src="img/comm2.png"  alt="comments" style="height: 100%" class="elements"></div>
+                <div class="wtime"><img src="img/clock-solid.svg" alt="time" style="height: 80%" class="elements"><div class="txttime elements">&nbsp;3 days</div></div>
+              </div>
+              <div class="nizright2">
+                <img src="img/check-solid.svg" alt="Add task" style="height: 100%" class="elements"><div class="checktxt elements">&nbsp;&nbsp;6/21</div>
+              </div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="status supernesrochno"></div>
+            <div class="opisanielg"></div>
+            <div class="opisaniesh"></div>
+            <div class="niz">
+              <div class="nizleft">
+                <div style="width: 2%; margin-right: 10px;"><div class="strelka elements"></div></div>
+                <div class="messages"><img src="img/comm2.png"  alt="comments" style="height: 100%" class="elements"></div>
+                <div class="wtime"><img src="img/clock-solid.svg" alt="time" style="height: 80%" class="elements"><div class="txttime elements">&nbsp;5 days</div></div>
+              </div>
+              <div class="nizright2">
+                <img src="img/check-solid.svg" alt="Add task" style="height: 100%;" class="elements"><div class="checktxt elements">&nbsp;&nbsp;2/4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        include addtskbutton.pug
+      </div>
+
+
+
+
+
+
+
+
+
+
+<div class="board-container">
+        <div class="board">
+          <div class="bname"><h1>Done</h1></div>
+          <div class="task">
+            <div class="status vipolneno"></div>
+            <div class="opisanielg"></div>
+            <div class="opisaniesh"></div>
+            <div class="niz">
+              <div class="nizleft" style="width: 13%">
+                <div style="width: 2%; margin-right: 10px;"><div class="strelka elements"></div></div>
+                <div class="messages"><img src="img/comm2.png"  alt="comments" style="height: 100%" class="elements"></div>
+              </div>
+              <div class="nizright">
+                <div class="ended elements">Completed: 1 May</div>
+              </div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="status vipolneno"></div>
+            <div class="opisanielg"></div>
+            <div class="opisaniesh"></div>
+            <div class="niz">
+              <div class="nizleft" style="width: 13%">
+                <div style="width: 2%; margin-right: 10px;"><div class="strelka elements"></div></div>
+                <div class="messages"><img src="img/comm2.png"  alt="comments" style="height: 100%" class="elements"></div>
+              </div>
+              <div class="nizright">
+                <div class="ended elements">Completed: 3 May</div>
+              </div>
+            </div>
+          </div>
+          <div class="task">
+            <div class="status vipolneno"></div>
+            <div class="opisanielg"></div>
+            <div class="opisaniesh"></div>
+            <div class="niz">
+              <div class="nizleft" style="width: 13%">
+                <div style="width: 2%; margin-right: 10px;"><div class="strelka elements"></div></div>
+                <div class="messages"><img src="img/comm2.png"  alt="comments" style="height: 100%" class="elements"></div>
+              </div>
+              <div class="nizright">
+                <div class="ended elements">Completed: 9 May</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
