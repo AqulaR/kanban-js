@@ -16,7 +16,6 @@
 
 .up{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	margin: 1% 1.5% 1% 1.5%;
 }
@@ -52,14 +51,13 @@
 
 
 .down{
-	margin: 0 1.5% 0 1.5%;
+	margin: 0 0.8% 0 0.8%;
 	display: flex;
-	justify-content: space-between;
 }
 
 .board{
 	border-radius: 10px;
-	width: 100%;
+	width: 500px;
 	padding-bottom: 5px;
 	background: rgba(255, 255, 255, 0.5);
 	margin-bottom: 20px;
@@ -69,8 +67,8 @@
 }
 
 .board-container{
-	width: 31%;
-	margin-bottom: 100px;
+	width: 500px;
+	margin: 0 10px 100px 10px;
 }
 
 /* tasks */
@@ -110,12 +108,18 @@
 }
 
 .opisanielg{
-	border-radius: 10px;
-	background: rgba(176, 176, 176, 0.7);
+	/*border-radius: 10px;
+	background: rgba(176, 176, 176, 0.7);*/
 	width: 75%;
-	height: 22px;
+	height: 44px;
 	margin: 0 3% 2% 5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
 }
+
 
 .niz{
 	margin: 0 3% 3% 3%;
@@ -126,7 +130,7 @@
 .nizleft{
 	display: flex;
 	justify-content: space-between;
-	width: 35%;
+	width: 118px;
 	margin-left: 3%;
 	height: 30px;
 }
@@ -147,6 +151,10 @@
 
 .elements{
 	opacity: 0.65;
+}
+
+.messages {
+	width: 30px;
 }
 /*Status*/
 
