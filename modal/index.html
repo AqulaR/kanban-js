@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <a href="#openModal">Открыть модальное окно</a>
+    <div class="modalWindow_container">
+        <div class="modalwindow">
+            <div class="MWheader">Добавление доски</div>
+            <div class="MWcontent">
+                Введите название: 
+                <input type="text">
+            </div>
+            <div class="MWfooter">
+                <button>Отменить</button>
+                <button>Создать</button>
+            </div>            
+        </div>
+    </div>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Название</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+              <p>Содержимое модального окна...</p>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+</body>
+</html>

@@ -1,39 +1,38 @@
 .strelka {
 	border-radius: 2px;
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 5px;
 	transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
 }
 
-.bg{
+.bg {
 	background-image: url(../img/bg2.jpg);
 	background-size: 250%;
 	font-family: 'Comfortaa', cursive;
-	width: fit-content;
 }
 
-.up{
+.up {
 	display: flex;
 	justify-content: space-between;
 	margin: 1% 1.5% 1% 1.5%;
 	width: 100%;
 }
 
-.upleft{
+.upleft {
 	justify-content: center;
 	text-align: center;
 }
 
-.upright{
+.upright {
 	display: flex;
 	width: 50%;
 	justify-content: flex-end;
 }
 
-.button70{
+.button70 {
 	border: 0px;
 	border-radius: 10px;
 	height: 70px;
@@ -42,7 +41,7 @@
 	opacity: .5;
 }
 
-.addboard{
+.addboard {
 	border: 0px;
 	border-radius: 10px;
 	height: 70px;
@@ -53,12 +52,12 @@
 }
 
 
-.down{
+.down {
 	margin: 0 0.8% 0 0.8%;
 	display: flex;
 }
 
-.board{
+.board {
 	border-radius: 10px;
 	width: 500px;
 	padding-bottom: 5px;
@@ -69,14 +68,14 @@
 	align-items: center;
 }
 
-.board-container{
+.board-container {
 	width: 500px;
 	margin: 0 10px 100px 10px;
 }
 
 /* tasks */
 
-.addtsk{
+.addtsk {
 	border: 0px;
 	border-radius: 10px;
 	width: 100%;
@@ -87,7 +86,7 @@
 	justify-content: center;
 }
 
-.task{
+.task {
 	border-radius: 10px;
 	width: 90%;
 	height: 165px;
@@ -97,12 +96,12 @@
 	flex-direction: column;
 }
 
-.bname{
+.bname {
 	width: 90%;
 	margin-top: 4%;
 }
 
-.opisaniesh{
+.opisaniesh {
 	border-radius: 10px;
 	background: rgba(176, 176, 176, 0.7);
 	width: 55%;
@@ -110,7 +109,7 @@
 	margin: 0 3% 3% 5%;
 }
 
-.opisanielg{
+.opisanielg {
 	/*border-radius: 10px;
 	background: rgba(176, 176, 176, 0.7);*/
 	width: 75%;
@@ -124,13 +123,13 @@
 }
 
 
-.niz{
+.niz {
 	margin: 0 3% 3% 3%;
 	display: flex;
 	justify-content: space-between;
 }
 
-.nizleft{
+.nizleft {
 	display: flex;
 	justify-content: space-between;
 	width: 118px;
@@ -138,51 +137,54 @@
 	height: 30px;
 }
 
-.wtime{
+.wtime {
 	display: flex;
 	margin-top: 5px;
 }
 
-.checkbox{
-	display: flex;	
+.checkbox {
+	display: flex;
 }
-.nizright2{
-	width:12%;
+
+.nizright2 {
+	width: 12%;
 	height: 20px;
 	display: flex;
 }
 
-.elements{
+.elements {
 	opacity: 0.65;
 }
 
 .messages {
 	width: 30px;
 }
+
 /*Status*/
 
-.status{
+.status {
 	border-radius: 10px;
 	width: 37%;
 	height: 22px;
 	margin: 5% 0 4% 5%;
 }
-.srochno{
+
+.srochno {
 	background: rgba(255, 98, 98, 0.7);
 }
 
-.nesrochno{
+.nesrochno {
 	background: rgba(139, 255, 98, 0.7);
 }
 
-.med{
+.med {
 	background: rgba(251, 255, 78, 0.7);
 }
 
-.supernesrochno{
+.supernesrochno {
 	background: rgba(98, 123, 255, 0.7);
 }
 
-.vipolneno{
-	background: rgba(98, 123, 255, 0.7);                                            
+.vipolneno {
+	background: rgba(98, 123, 255, 0.7);
 }

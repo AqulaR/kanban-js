@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "name": "To do",
         "tasks": [
             {
@@ -17,6 +18,7 @@
         ]
     },
     {
+        "id": 1,
         "name": "In work",
         "tasks": [
             {
@@ -42,36 +44,12 @@
         ]
     },
     {
+        "id": 2,
         "name": "Done",
         "tasks": [
             {
                 "name": "sdfsd",
                 "status": "supernesrochno",
-                "time": "1"
-            },
-            {
-                "name": "sdfsd",
-                "status": "supernesrochno",
-                "time": "1"
-            }
-        ]
-    },
-    {
-        "name": "In work",
-        "tasks": [
-            {
-                "name": "sdfsd",
-                "status": "srochno",
-                "time": "1"
-            },
-            {
-                "name": "sdfsd",
-                "status": "med",
-                "time": "1"
-            },
-            {
-                "name": "sdfsd",
-                "status": "nesrochno",
                 "time": "1"
             },
             {

@@ -27,4 +27,5 @@ for n in data
             div.nizright
               div.peopletsk.elements 6 views
     if n.name != 'Done'
-      include addtskbutton.pug
+      button.addtsk(id=n.id)(onclick='intoJson(id);')
+        <img src="img/plus.svg" alt="Add task" style="height: 100%">

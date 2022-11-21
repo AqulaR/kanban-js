@@ -3,7 +3,7 @@ const http = require("http");
 const path = require("path");
 const cors = require("cors");
 const morgan = require("morgan");
-const { faker } = require('@faker-js/faker/locale/ru');
+//const { faker } = require('@faker-js/faker/locale/ru');
 const app = express();
 const server = http.createServer(app);
 const fs = require('fs');
@@ -39,6 +39,25 @@ app.use('/dashboard', function (request, res) {
 		data:data,
 	})
 })
+
+let jsonfile = require('jsonfile');
+app.put('/edit/:id', function(req, res) {
+    let id = req.params.id;
+    let newText = req.body.text;
+
+    // read in the JSON file
+    jsonfile.readFile('data.json', function(err, obj) {
+      let fileObj = obj;
+
+      // Modify the text at the appropriate id
+      fileObj[id].text = newText;
+
+      // Write the modified obj to the file
+      jsonfile.writeFile('data.json', fileObj, function(err) {
+          if (err) throw err;
+      });
+    });
+});
 
 console.log("server is running");
 server.listen(3000)
