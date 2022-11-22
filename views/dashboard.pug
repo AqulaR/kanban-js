@@ -11,14 +11,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
   </head>
   <body class="bg">
-    include boardheader.pug
+    div.up.bgtransition
+      div.upleft
+        h1 Project name
+      div.upright
+        div.people
+        <button class="addboard" id="myBtn"> Add board </button>
+        <button class="button70">
+            <i class="strelka"></i>
+        </button>
+    <div id="myModal" class="modall">
+      <div class="modall-content">
+        <div class="modall-header">
+          <span class="close">&times;</span>
+          <h2>Добавление доски</h2>
+        </div>
+        <div class="modall-body">
+          <p>ворк ин прогресс</p>
+          <p>ворк ин прогресс</p>
+        </div>
+        <div class="modall-footer">
+          <h3>Создать</h3>
+        </div>
+      </div>
+    </div>
     <div class="down">
       include board.pug
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
     script(type='text/javascript').
       function intoJson(id){
         console.log(id) 
         }
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
   </body>
 </html>
