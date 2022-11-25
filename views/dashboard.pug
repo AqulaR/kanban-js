@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>kanban</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modalwindow.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +13,38 @@
   </head>
   <body class="bg">
     include boardheader.pug
+    include modaladdboard.pug
+    include modaladdtsk.pug
     <div class="down">
       include board.pug
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
     script(type='text/javascript').
       function intoJson(id){
         console.log(id) 
+
+        let modal = document.getElementById("myModal");
+        let span = document.getElementsByClassName("close")[0];
+
+        let btnaddboard = document.getElementById("myBtn");
+        let btnaddtsk = document.getElementsByClassName("myBtn");
+        console.log(btnaddtsk);
+        
+        for (let i = 0; i < btnaddtsk.length; i++) {
+            btnaddtsk[i].onclick = function() {
+              modal.style.display = "block";
+            }
         }
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      }
   </body>
 </html>

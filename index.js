@@ -41,23 +41,55 @@ app.use('/dashboard', function (request, res) {
 })
 
 let jsonfile = require('jsonfile');
+
+let file = jsonfile.readFileSync('data.json')
+
 app.put('/edit/:id', function(req, res) {
     let id = req.params.id;
     let newText = req.body.text;
 
-    // read in the JSON file
     jsonfile.readFile('data.json', function(err, obj) {
       let fileObj = obj;
-
-      // Modify the text at the appropriate id
       fileObj[id].text = newText;
-
-      // Write the modified obj to the file
       jsonfile.writeFile('data.json', fileObj, function(err) {
           if (err) throw err;
       });
+      res.send(obj)
     });
 });
+
+app.post('/addTask', (req, res) => {
+  if (!req.body) return res.sendStatus(400)
+  const user = {
+    id: file.length,
+    text: req.body.text,
+  }
+  jsonfile.readFile('data.json', (err, obj) => {
+    if (err) throw err
+    let fileObj = obj;
+    fileObj.push(user);
+    jsonfile.writeFile('data.json', fileObj, (err) => {
+      if (err) throw err;
+    })
+    res.send(obj)
+  })
+})
+
+app.delete('/delete/:id', (req, res) => {
+  jsonfile.readFile('data.json', (err, obj) => {
+    if (err) throw err
+    let fileObj = obj;
+    for(let i = 0; i < fileObj.length; i++) {
+      if (fileObj[i].id == req.params.id) {
+        fileObj.splice(i, 1)
+      }
+    }
+    jsonfile.writeFile('data.json', fileObj, { spaces: 2 }, (err) => {
+      if (err) throw err;
+    })
+    res.send(obj)
+  })
+})
 
 console.log("server is running");
 server.listen(3000)

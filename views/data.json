@@ -58,5 +58,57 @@
                 "time": "1"
             }
         ]
+    },
+    {
+        "id": 1,
+        "name": "In work",
+        "tasks": [
+            {
+                "name": "sdfsd",
+                "status": "srochno",
+                "time": "1"
+            },
+            {
+                "name": "sdfsd",
+                "status": "med",
+                "time": "1"
+            },
+            {
+                "name": "sdfsd",
+                "status": "nesrochno",
+                "time": "1"
+            },
+            {
+                "name": "sdfsd",
+                "status": "supernesrochno",
+                "time": "1"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "In work",
+        "tasks": [
+            {
+                "name": "sdfsd",
+                "status": "srochno",
+                "time": "1"
+            },
+            {
+                "name": "sdfsd",
+                "status": "med",
+                "time": "1"
+            },
+            {
+                "name": "sdfsd",
+                "status": "nesrochno",
+                "time": "1"
+            },
+            {
+                "name": "sdfsd",
+                "status": "supernesrochno",
+                "time": "1"
+            }
+        ]
     }
 ]
